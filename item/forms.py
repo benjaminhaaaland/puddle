@@ -10,7 +10,7 @@ class NewItemForm(forms.ModelForm):
         fields = ('category', 'name', 'description', 'price', 'image',)
         widgets = {
             'category': forms.Select(attrs={
-                'class': INPUT_CLASSES
+                'class': INPUT_CLASSES,
             }),
             'name': forms.TextInput(attrs={
                 'class': INPUT_CLASSES
